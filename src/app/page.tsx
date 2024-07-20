@@ -3,8 +3,12 @@ import CharacterCard from "@/components/CharacterCard";
 export default function Home () {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Hackopoly</h1>
-      <h2>- Die Demokatie</h2>
+      <div className="w-full">
+        <div className="mb-10">
+          <h1>Hackopoly</h1>
+          <h2>Die Demokatie</h2>
+        </div>
+      </div>
       <p></p>
       {/* Character Cards */}
       <section className="flex gap-5 flex-wrap">

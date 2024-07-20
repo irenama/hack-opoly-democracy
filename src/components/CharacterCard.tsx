@@ -1,9 +1,8 @@
 import { type Character } from "@/app/page";
 
-const CharacterCard: React.FC<{ data: Character }> = ( { data } ) => {
+const CharacterCard: React.FC<{ data: Omit<Character, "id"> }> = ( { data } ) => {
   return (
     <article className='flex flex-col shadow-lg bg-white border-black border-4 w-80'>
-      {/* <h3>Character Card</h3> */}
       <div className="bg-red-500 h-20 border-b-2 border-black"></div>
       <div className="p-2">
 
