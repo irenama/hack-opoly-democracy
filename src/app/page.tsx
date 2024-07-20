@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import CharacterCard from "@/components/CharacterCard";
 import Section from "@/components/Section";
 
