@@ -7,7 +7,7 @@ const CharacterCard: React.FC<{ data: Omit<Character, "id"> }> = ( { data } ) =>
       <div className="p-5">
 
         <div className="min-h-40 py-5 text-center flex justify-center items-center">
-          <h3>{data.name}</h3>
+          <h4>{data.name}</h4>
         </div>
         <ul className="pt-2 h-auto">
           {data.characteristics.map( ( characteristic, index ) => (

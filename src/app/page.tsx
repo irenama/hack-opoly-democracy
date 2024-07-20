@@ -9,14 +9,25 @@ export default function Home () {
           <h2>Die Demokatie</h2>
         </div>
       </div>
-      <p></p>
+      <p>Hackopoly fordert die Spielenden heraus, neue Rollen zu übernehmen und verschiedene Perspektiven einzunehmen. Dabei lernen sie, wie man durch demokratische Mittel Mehrheiten organisiert und gemeinsam eine gerechtere Gesellschaft aufbaut. Das Spiel fördert Empathie und Verständnis für die Herausforderungen und Privilegien anderer. Im Gegensatz zu klassischem Monopoly zielt Hackopoly darauf ab, das Spiel ohne Feindseligkeit zu beenden.</p>
+
+      <p>Hackopoly wurde entwickelt, um auf die Bedrohung der Demokratie durch faschistische Bewegungen aufmerksam zu machen, deren Ziel die Abschaffung demokratischer Strukturen und die Durchsetzung autoritärer Kontrolle ist. Gleichzeitig schwindet das Vertrauen in die Demokratie, oft aufgrund negativer Erfahrungen und dem Gefühl geringer demokratischer Mitbestimmung im Alltag. Viele Menschen haben nur wenige Erlebnisse, bei denen sie die Kraft demokratischer Prozesse und deren positive Wirkung erfahren können.</p>
+
+      <p>Hackopoly bietet eine leicht zugängliche Möglichkeit, Demokratie spielerisch zu erleben und zu erfahren, wie man durch demokratische Mittel eine gerechtere Gesellschaft aufbaut. Da fast jeder Haushalt ein Monopoly-Spiel besitzt, haben wir die Hackopoly-Erweiterung so gestaltet, dass sie einfach zu Hause ausgedruckt und mit einem herkömmlichen Monopoly-Spiel genutzt werden kann.</p>
+
+      <h3>Wie gespielt wird</h3>
+
+      <p>In Hackopoly schlüpfen die Spielenden in zufällig zugewiesene Rollen, die an reale Menschen in unserer Gesellschaft angelehnt sind. Jede Rolle kommt mit Privilegien und Herausforderungen, die die normale Monopoly-Spielmechanik beeinflussen. Diese Startbedingungen können das Leben eines Spielenden entweder leichter oder schwerer machen und spiegeln somit die unterschiedlichen Ausgangslagen im echten Leben wider.</p>
+      <p>Zusätzlich haben die Spielenden die Möglichkeit, Gesetze zu entwerfen und zu verabschieden, um zu zeigen, wie durch demokratische Mehrheitsbildung ungleiche Rahmenbedingungen ausgeglichen werden können.</p>
       {/* Character Cards */}
+
+      <h3>Charaktere</h3>
       <section className="flex gap-5 flex-wrap">
         {characters.map( ( { id, ...data } ) => (
           <CharacterCard key={id} data={data} />
         ) )}
       </section>
-    </main>
+    </main >
   );
 }
 
