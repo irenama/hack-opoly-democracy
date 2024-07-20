@@ -1,4 +1,5 @@
 import CharacterCard from "@/components/CharacterCard";
+import Section from "@/components/Section";
 
 export default function Home () {
   return (
@@ -9,24 +10,54 @@ export default function Home () {
           <h2>Die Demokatie</h2>
         </div>
       </div>
-      <p>Hackopoly fordert die Spielenden heraus, neue Rollen zu übernehmen und verschiedene Perspektiven einzunehmen. Dabei lernen sie, wie man durch demokratische Mittel Mehrheiten organisiert und gemeinsam eine gerechtere Gesellschaft aufbaut. Das Spiel fördert Empathie und Verständnis für die Herausforderungen und Privilegien anderer. Im Gegensatz zu klassischem Monopoly zielt Hackopoly darauf ab, das Spiel ohne Feindseligkeit zu beenden.</p>
+      <Section>
+        <p>Hackopoly fordert die Spielenden heraus, neue Rollen zu übernehmen und verschiedene Perspektiven einzunehmen. Dabei lernen sie, wie man durch demokratische Mittel Mehrheiten organisiert und gemeinsam eine gerechtere Gesellschaft aufbaut. Das Spiel fördert Empathie und Verständnis für die Herausforderungen und Privilegien anderer. Im Gegensatz zu klassischem Monopoly zielt Hackopoly darauf ab, das Spiel ohne Feindseligkeit zu beenden.</p>
 
-      <p>Hackopoly wurde entwickelt, um auf die Bedrohung der Demokratie durch faschistische Bewegungen aufmerksam zu machen, deren Ziel die Abschaffung demokratischer Strukturen und die Durchsetzung autoritärer Kontrolle ist. Gleichzeitig schwindet das Vertrauen in die Demokratie, oft aufgrund negativer Erfahrungen und dem Gefühl geringer demokratischer Mitbestimmung im Alltag. Viele Menschen haben nur wenige Erlebnisse, bei denen sie die Kraft demokratischer Prozesse und deren positive Wirkung erfahren können.</p>
+        <p>Hackopoly wurde entwickelt, um auf die Bedrohung der Demokratie durch faschistische Bewegungen aufmerksam zu machen, deren Ziel die Abschaffung demokratischer Strukturen und die Durchsetzung autoritärer Kontrolle ist. Gleichzeitig schwindet das Vertrauen in die Demokratie, oft aufgrund negativer Erfahrungen und dem Gefühl geringer demokratischer Mitbestimmung im Alltag. Viele Menschen haben nur wenige Erlebnisse, bei denen sie die Kraft demokratischer Prozesse und deren positive Wirkung erfahren können.</p>
 
-      <p>Hackopoly bietet eine leicht zugängliche Möglichkeit, Demokratie spielerisch zu erleben und zu erfahren, wie man durch demokratische Mittel eine gerechtere Gesellschaft aufbaut. Da fast jeder Haushalt ein Monopoly-Spiel besitzt, haben wir die Hackopoly-Erweiterung so gestaltet, dass sie einfach zu Hause ausgedruckt und mit einem herkömmlichen Monopoly-Spiel genutzt werden kann.</p>
+        <p>Hackopoly bietet eine leicht zugängliche Möglichkeit, Demokratie spielerisch zu erleben und zu erfahren, wie man durch demokratische Mittel eine gerechtere Gesellschaft aufbaut. Da fast jeder Haushalt ein Monopoly-Spiel besitzt, haben wir die Hackopoly-Erweiterung so gestaltet, dass sie einfach zu Hause ausgedruckt und mit einem herkömmlichen Monopoly-Spiel genutzt werden kann.</p>
+      </Section>
+      <Section>
+        <h3>Wie gespielt wird</h3>
 
-      <h3>Wie gespielt wird</h3>
+        <p>In Hackopoly schlüpfen die Spielenden in zufällig zugewiesene Rollen, die an reale Menschen in unserer Gesellschaft angelehnt sind. Jede Rolle kommt mit Privilegien und Herausforderungen, die die normale Monopoly-Spielmechanik beeinflussen. Diese Startbedingungen können das Leben eines Spielenden entweder leichter oder schwerer machen und spiegeln somit die unterschiedlichen Ausgangslagen im echten Leben wider.</p>
+        <p>Zusätzlich haben die Spielenden die Möglichkeit, Gesetze zu entwerfen und zu verabschieden, um zu zeigen, wie durch demokratische Mehrheitsbildung ungleiche Rahmenbedingungen ausgeglichen werden können.</p>
+      </Section>
+      <Section>
+        <h3>Charaktere</h3>
+        <div className="flex gap-5 flex-wrap">
+          {characters.map( ( { id, ...data } ) => (
+            <CharacterCard key={id} data={data} />
+          ) )}
+        </div>
+      </Section>
+      <Section>
+        <h3>Idee</h3>
+        <p>
+          Hackopoly fordert die Spielenden heraus, neue Rollen zu übernehmen und verschiedene Perspektiven einzunehmen. Dabei lernen sie, wie man durch demokratische Mittel Mehrheiten organisiert und gemeinsam eine gerechtere Gesellschaft aufbaut. Das Spiel fördert Empathie und Verständnis für die Herausforderungen und Privilegien anderer. Im Gegensatz zu klassischem Monopoly zielt Hackopoly darauf ab, das Spiel ohne Feindseligkeit zu beenden.
 
-      <p>In Hackopoly schlüpfen die Spielenden in zufällig zugewiesene Rollen, die an reale Menschen in unserer Gesellschaft angelehnt sind. Jede Rolle kommt mit Privilegien und Herausforderungen, die die normale Monopoly-Spielmechanik beeinflussen. Diese Startbedingungen können das Leben eines Spielenden entweder leichter oder schwerer machen und spiegeln somit die unterschiedlichen Ausgangslagen im echten Leben wider.</p>
-      <p>Zusätzlich haben die Spielenden die Möglichkeit, Gesetze zu entwerfen und zu verabschieden, um zu zeigen, wie durch demokratische Mehrheitsbildung ungleiche Rahmenbedingungen ausgeglichen werden können.</p>
-      {/* Character Cards */}
+          Hackopoly wurde entwickelt, um auf die Bedrohung der Demokratie durch faschistische Bewegungen aufmerksam zu machen, deren Ziel die Abschaffung demokratischer Strukturen und die Durchsetzung autoritärer Kontrolle ist. Gleichzeitig schwindet das Vertrauen in die Demokratie, oft aufgrund negativer Erfahrungen und dem Gefühl geringer demokratischer Mitbestimmung im Alltag. Viele Menschen haben nur wenige Erlebnisse, bei denen sie die Kraft demokratischer Prozesse und deren positive Wirkung erfahren können.
 
-      <h3>Charaktere</h3>
-      <section className="flex gap-5 flex-wrap">
-        {characters.map( ( { id, ...data } ) => (
-          <CharacterCard key={id} data={data} />
-        ) )}
-      </section>
+          Hackopoly bietet eine leicht zugängliche Möglichkeit, Demokratie spielerisch zu erleben und zu erfahren, wie man durch demokratische Mittel eine gerechtere Gesellschaft aufbaut. Da fast jeder Haushalt ein Monopoly-Spiel besitzt, haben wir die Hackopoly-Erweiterung so gestaltet, dass sie einfach zu Hause ausgedruckt und mit einem herkömmlichen Monopoly-Spiel genutzt werden kann. Das Spiel und die Regeln sind Open Source und können von der Community weiterentwickelt und angepasst werden.
+        </p>
+        <h3>Vorbereitung</h3>
+        <p>
+          Die Hackopoly-Erweiterung kann einfach als PDF heruntergeladen und ausgeschnitten werden (coming soon). Diese enthält Charakterbögen, die Auskunft über verschiedene Sonderregeln geben, die die Spielenden betreffen. Gesetzesvorlagen und Ereigniskarten sind ebenfalls enthalten. Die Ereigniskarten werden einfach zu den Ereigniskarten aus dem Monopoly-Spiel hinzugemischt.
+        </p>
+        <h3>Die Regeln</h3>
+        <p>
+          Zu Beginn zieht jede*r Spielende einen zufälligen Charakterbogen, der das gesamte Spiel über gleich bleibt.
+
+          Immer wenn eine Spielender an "Frei Parken" vorbeizieht, hat diese*r die Möglichkeit, einen Gesetzesentwurf zu formulieren. Hierfür muss definiert werden, wen das Gesetz betrifft, wann es ausgeführt wird und was passiert.
+
+          Beispiel: Gesetz Kindergeld – alle Spielenden mit Kindern bekommen beim Überqueren des "Los" 100 Euro extra.
+
+          Wenn Spielende eine Ereigniskarte ziehen, kann dies entweder ein Privileg oder eine Herausforderung sein, die bis zum Ende des Spiels gelten, z.B. ein Unfall. Oder es kann ein globales Ereignis sein, das alle Spielenden in gewisser Weise betrifft, z.B. eine Flut.
+
+          Das Spielende
+          Das Spiel endet, wenn alle Spielenden sich darauf einigen können, eine gerechte Gesellschaft geschaffen zu haben.
+        </p>
+      </Section>
     </main >
   );
 }

@@ -2,7 +2,7 @@
 
 ## The Project
 
-This is the website of a 
+hosted on [www.hackopoly.xyz/](https://www.hackopoly.xyz/)
 
 
 ## Tech
