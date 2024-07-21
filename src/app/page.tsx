@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-import CharacterCard from "@/components/CharacterCard";
 import NavLink from "@/components/NavLink";
 import Section from "@/components/Section";
+import Street from "@/components/Street";
 
 export default function Home () {
   return (
@@ -49,18 +49,12 @@ export default function Home () {
           Die Hackopoly-Erweiterung kann einfach als PDF heruntergeladen und ausgeschnitten werden (coming soon). Diese enthält Charakterbögen, die Auskunft über verschiedene Sonderregeln geben, die die Spielenden betreffen. Gesetzesvorlagen und Ereigniskarten sind ebenfalls enthalten. Die Ereigniskarten werden einfach zu den Ereigniskarten aus dem Monopoly-Spiel hinzugemischt.
         </p>
         <h3>▶︎ Die Regeln</h3>
-        <p>
-          Zu Beginn zieht jede*r Spielende einen zufälligen Charakterbogen, der das gesamte Spiel über gleich bleibt.
-        </p>
-        <p>
-          Immer wenn ein*e Spielende*r an "Frei Parken" vorbeizieht, hat diese*r die Möglichkeit, einen Gesetzesentwurf zu formulieren. Hierfür muss definiert werden, wen das Gesetz betrifft, wann es ausgeführt wird und was passiert.
-        </p>
-        <p>
-          Beispiel: Gesetz Kindergeld – alle Spielenden mit Kindern bekommen beim Überqueren des "Los" 100 Euro extra.
-        </p>
-        <p>
-          Wenn Spielende eine Ereigniskarte ziehen, kann dies entweder ein Privileg oder eine Herausforderung sein, die bis zum Ende des Spiels gelten, z.B. ein Unfall. Oder es kann ein globales Ereignis sein, das alle Spielenden in gewisser Weise betrifft, z.B. eine Flut.
-        </p>
+        <div className="flex gap-5 flex-wrap justify-center md:justify-start">
+          <Street text="Zu Beginn zieht jede*r Spielende einen zufälligen Charakterbogen, der das gesamte Spiel über gleich bleibt." />
+          <Street text="Immer wenn ein*e Spielende*r an 'Frei Parken' vorbeizieht, hat diese*r die Möglichkeit, einen Gesetzesentwurf zu formulieren. Hierfür muss definiert werden, wen das Gesetz betrifft, wann es ausgeführt wird und was passiert." />
+          <Street text="Wenn Spielende eine Ereigniskarte ziehen, kann dies entweder ein Privileg oder eine Herausforderung sein, die bis zum Ende des Spiels gelten, z.B. ein Unfall. Oder es kann ein globales Ereignis sein, das alle Spielenden in gewisser Weise betrifft, z.B. eine Flut." />
+        </div>
+        <p className="pt-5">Beispielgesetz: Gesetz Kindergeld – alle Spielenden mit Kindern bekommen beim Überqueren des 'Los' 100 Euro extra.</p>
         <h3>◼︎ Das Spielende</h3>
         <p>
           Das Spiel endet, wenn alle Spielenden sich darauf einigen können, eine gerechte Gesellschaft geschaffen zu haben.

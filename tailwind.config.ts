@@ -8,6 +8,17 @@ const config: Config = {
   ],
   theme: {
     colors: {
+      person: {
+        red: "#e1370b",
+        green: "#00d850",
+        blue: "#132382",
+        brown: "#974e3a",
+        yellow: "#ffed00",
+        gray: "#a0a0a0",
+        pink: "#d6338a",
+        lightblue: "#b3e0f8",
+        orange: "#f59202"
+      },
       green: {
         100: "#e0f0e4",
         200: "#b7cbbe",
@@ -24,7 +35,7 @@ const config: Config = {
         200: "#f1c1c1",
         300: "#eaa2a2",
         400: "#e28484",
-        500: "#db6565", //
+        500: "#e1370b", //
         600: "#b34f4f",
         700: "#8c3a3a",
         800: "#652525",

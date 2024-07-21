@@ -26,7 +26,7 @@ export default function Home () {
 const characters = [
   {
     id: "abc",
-    color: "red",
+    color: "pink",
     name: "Thomas Vogel",
     description: "Vorstand eines privatisierten öffentlichen Unternehmens",
     characteristics: [
@@ -39,7 +39,7 @@ const characters = [
   },
   {
     id: "cde",
-    color: "red",
+    color: "blue",
     name: "Sabine Hoffmann",
     characteristics: [
       "Alleinerziehend | -100€ über los",
@@ -50,7 +50,7 @@ const characters = [
   },
   {
     id: "efg",
-    color: "red",
+    color: "green",
     name: "Anne Schmidt",
     description: "Oberschicht",
     characteristics: [
@@ -64,7 +64,7 @@ const characters = [
   {
     id: "ghi",
     name: "Paul Würdig",
-    color: "red",
+    color: "orange",
     description: "Rapper",
     characteristics: [
       "Rap Talent | pro Zug 3x Würfel um bei 3x 6 Durchbruch → pro Zug +500€",
@@ -77,7 +77,7 @@ const characters = [
   {
     id: "jkl",
     name: "Nepomuk von Graf",
-    color: "red",
+    color: "gray",
     description: "Nachhaltig aber NIMBI",
     characteristics: [
       "Eigentumswohnung",
@@ -89,7 +89,7 @@ const characters = [
   {
     id: "mno",
     name: "Dariusz Nowak",
-    color: "",
+    color: "red",
     description: "Arbieter",
     characteristics: [
       "Prekär beschäftigt | 1x Würfeln pro Zug ⚡️ 6: Arbeitslos",
@@ -99,9 +99,22 @@ const characters = [
     ],
   },
   {
+    id: "öio",
+    name: "Lena Riedl",
+    color: "yellow",
+    description: "",
+    characteristics: [
+      "Querschnitsgelähmt | -4 Augen pro Zug",
+      "fehlende Barrierefreiheit | kann nicht auf braun bleiben (aussetzen wenn gewürfelt",
+      "Arztkosten | -10€ pro Zug",
+      "Guter Job | +50€ bei Los",
+      "Wohnung | +80€ bei Los",
+    ],
+  },
+  {
     id: "pqr",
     name: "Klaus Müller",
-    color: "",
+    color: "lightblue",
     description: "I bins da Hans",
     characteristics: [
       "Hausbesitzer (orange) | Grund + kleines Haus",
@@ -111,9 +124,22 @@ const characters = [
     ],
   },
   {
+    id: "vwx",
+    name: "Achmed",
+    color: "blue",
+    description: "",
+    characteristics: [
+      "Trauma | Pasch 3 (beliebiger Spieler) nächste Runde aussetzen",
+      "Verletzung | -2 Augen pro Zug",
+      "Familie | -100€ pro Zug",
+      "Rassismus | eine Runde länger ins Gefängnis",
+      "Kein Staatsbürger | darf nicht wählen"
+    ],
+  },
+  {
     id: "stu",
     name: "Justus",
-    color: "red",
+    color: "brown",
     description: "",
     characteristics: [
       "Privat Jet | pro Zug: beliebiges Feld",
@@ -123,18 +149,5 @@ const characters = [
       "guter Anwalt | 1 Runde weniger im Gefängnis",
     ],
   },
-  {
-    id: "vwx",
-    name: "Achmed",
-    color: "red",
-    description: "",
-    characteristics: [
-      "Trauma | Pasch 3 (beliebiger Spieler) nächste Runde aussetzen",
-      "Verletzung | -2 Augen pro Zug",
-      "Familie | -100€ pro Zug",
-      "Rassismus | eine Runde länger ins Gefängnis",
-      "Kein Staatsbürger | darf nicht wählen"
-    ],
-  }
 ];
 export type Character = typeof characters[number];
