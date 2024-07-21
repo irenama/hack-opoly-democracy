@@ -4,11 +4,11 @@ import Section from "@/components/Section";
 
 export default function Home () {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-5 md:p-24">
       <div className="w-full">
         <div className="mb-10">
           <h1>Hackopoly</h1>
-          <h2>Die Demokatie</h2>
+          <h2>Demokatie Edition</h2>
         </div>
       </div>
       <Section>
@@ -26,7 +26,7 @@ export default function Home () {
       </Section>
       <Section>
         <h3>Charaktere</h3>
-        <div className="flex gap-5 flex-wrap">
+        <div className="flex gap-5 flex-wrap justify-center">
           {characters.map( ( { id, ...data } ) => (
             <CharacterCard key={id} data={data} />
           ) )}

@@ -33,7 +33,6 @@ body {
 }
   
 h1 {
-  /* font-family: var(--font-playfair-display); */
   font-size: 6rem;
   font-weight: 800;
 }
@@ -48,10 +47,29 @@ h3 {
 }
 h4 {
   font-size: 1.8rem;
+  font-weight: 500;
 }
 p, a {
   font-size: 1.2rem;
 }
 a {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  p, a {
+    font-size: 1rem;
+  }
 }
