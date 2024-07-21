@@ -2,7 +2,7 @@ import { type Character } from "@/app/characters/page";
 
 const CharacterCard: React.FC<{ data: Omit<Character, "id"> }> = ( { data } ) => {
   return (
-    <article className='flex flex-col shadow-lg bg-white border-black border-4 w-72 md:w-80'>
+    <article className='flex flex-col shadow-lg bg-white border-black border-4 w-80'>
       {data.color === "red" ?
         <div className="bg-person-red h-32 border-b-2 border-black"></div> :
         data.color === "green" ? <div className="bg-person-green h-32 border-b-2 border-black"></div> :

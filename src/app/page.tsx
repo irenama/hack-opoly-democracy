@@ -5,10 +5,10 @@ import Street from "@/components/Street";
 
 export default function Home () {
   return (
-    <main className="flex relative min-h-screen flex-col items-center justify-between p-5 pb-12 md:p-24">
+    <main className="flex relative min-h-screen flex-col items-center justify-between p-5 py-12 md:p-24">
       <NavLink href="/characters" text="Charaktere" />
       <div className="w-full">
-        <div className="mb-10">
+        <div className="my-10">
           <h1>Hackopoly</h1>
           <h2>Demokratie Edition</h2>
         </div>

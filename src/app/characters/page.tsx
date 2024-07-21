@@ -4,10 +4,10 @@ import Section from "@/components/Section";
 
 export default function Home () {
   return (
-    <main className="flex relative min-h-screen flex-col items-center justify-between p-5 md:p-24">
+    <main className="flex relative min-h-screen flex-col items-center justify-between p-5 py-12 md:p-24">
       <NavLink href="/" text="Home" />
       <div className="w-full">
-        <div className="mb-10">
+        <div className="my-10">
           <h1>Hackopoly</h1>
           <h2>Demokratie Edition - Die Charaktere</h2>
         </div>
