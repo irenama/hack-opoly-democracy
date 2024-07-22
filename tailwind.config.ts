@@ -19,6 +19,7 @@ const config: Config = {
         lightblue: "#b3e0f8",
         orange: "#f59202"
       },
+      white: "#ffffff",
       green: {
         100: "#e0f0e4",
         200: "#b7cbbe",

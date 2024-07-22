@@ -2,10 +2,14 @@ import CharacterCard from "@/components/CharacterCard";
 import NavLink from "@/components/NavLink";
 import Section from "@/components/Section";
 
-export default function Home () {
+export default function Characters () {
   return (
     <main className="flex relative min-h-screen flex-col items-center justify-between p-5 py-12 md:p-24">
-      <NavLink href="/" text="Home" />
+      <NavLink links={[
+        { href: "/community-cards", text: "Ereigniskarten" },
+        { href: "/", text: "Home" },
+        // {href:"/chance-cards", text:"Chance Karten"},
+      ]} />
       <div className="w-full">
         <div className="my-10">
           <h1>Hackopoly</h1>
