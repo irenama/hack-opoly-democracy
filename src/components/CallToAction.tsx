@@ -9,7 +9,7 @@ export default function CallToAction () {
         <Link className="bg-black text-white border-2 py-5 px-10" href="/HACKOPOLY-CC-BY-SA_Alle_DruckBoegen_v07_compressed.pdf" download="Hackopoly Erweiterung">DOWNLOAD "HACKOPOLY"</Link>
         <Link href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" className="text-sm"><em>CC BY-SA 4.0</em></Link>
       </div>
-      <p>Wenn dir die Erweiterung gefällt und du uns unterstützen möchtest, kannst du entweder Ideen einbringen (per <Link href="mailto:">Mail</Link> oder <Link href="">GitHub</Link>), oder wenn es ein kleines Danke für die ansprechende Gestaltung sein soll, kaufe doch <Link href="https://buymeacoffee.com/orestoast/" target="_blank">☕︎ <strong>Kaffee fürs Grafikteam!</strong></Link></p>
+      <p>Wenn dir die Erweiterung gefällt und du uns unterstützen möchtest, kannst du entweder Ideen einbringen (per <Link href="mailto:kontakt@hackopoly.xyz">Mail</Link> oder <Link href="https://github.com/Fizzcarraldo/Hackopoly/">GitHub</Link>), oder wenn es ein kleines Danke für die ansprechende Gestaltung sein soll, kaufe doch <Link href="https://buymeacoffee.com/orestoast/" target="_blank">☕︎ <strong>Kaffee fürs Grafikteam!</strong></Link></p>
 
     </div >
   );
