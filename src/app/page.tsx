@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import CallToAction from "@/components/CallToAction";
 import NavLink from "@/components/NavLink";
 import Section from "@/components/Section";
 import Street from "@/components/Street";
@@ -7,7 +8,6 @@ export default function Home () {
   return (
     <main className="flex relative min-h-screen flex-col items-center justify-between p-5 py-12 md:p-24">
       <NavLink links={[
-        // {href:"/chance-cards", text:"Chance Karten"},
         { href: "/community-cards", text: "Ereigniskarten" },
         { href: "/characters", text: "Charaktere" },
       ]} />
@@ -34,7 +34,7 @@ export default function Home () {
         <p>In Hackopoly schlüpfen die Spielenden in zufällig zugewiesene Rollen, die an reale Menschen in unserer Gesellschaft angelehnt sind. Jede Rolle kommt mit Privilegien und Herausforderungen, die die normale Monopoly-Spielmechanik beeinflussen. Diese Startbedingungen können das Leben eines Spielenden entweder leichter oder schwerer machen und spiegeln somit die unterschiedlichen Ausgangslagen im echten Leben wider.</p>
         <p>Zusätzlich haben die Spielenden die Möglichkeit, Gesetze zu entwerfen und zu verabschieden, um zu zeigen, wie durch demokratische Mehrheitsbildung ungleiche Rahmenbedingungen ausgeglichen werden können.</p>
       </Section>
-      {/* <CharacterCard data={{}} /> */}
+      <CallToAction />
       <Section>
         <h3>？Idee</h3>
         <p>
