@@ -19,6 +19,15 @@ export default function RootLayout ( {
 }> ) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="icon"
+          href="/icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+      </head>
       <body className={urbanist.className}>{children}
         <footer className="flex items-center p-5 flex-col">
           <p>

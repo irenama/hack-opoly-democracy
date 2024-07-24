@@ -11,12 +11,13 @@ export default function Home () {
         { href: "/community-cards", text: "Ereigniskarten" },
         { href: "/characters", text: "Charaktere" },
       ]} />
-      <div className="w-full">
+      <header className="w-full">
         <div className="my-10">
           <h1>Hackopoly</h1>
           <h2>Demokratie Edition</h2>
         </div>
-      </div>
+      </header>
+      <CallToAction />
       <Section>
         <p>
           Hackopoly fordert die Spielenden heraus, neue Rollen zu übernehmen und verschiedene Perspektiven einzunehmen. Dabei lernen sie, wie man durch demokratische Mittel Mehrheiten organisiert und gemeinsam eine gerechtere Gesellschaft aufbaut. Das Spiel fördert Empathie und Verständnis für die Herausforderungen und Privilegien anderer. Im Gegensatz zu klassischem Monopoly zielt Hackopoly darauf ab, das Spiel ohne Feindseligkeit zu beenden.
@@ -34,7 +35,6 @@ export default function Home () {
         <p>In Hackopoly schlüpfen die Spielenden in zufällig zugewiesene Rollen, die an reale Menschen in unserer Gesellschaft angelehnt sind. Jede Rolle kommt mit Privilegien und Herausforderungen, die die normale Monopoly-Spielmechanik beeinflussen. Diese Startbedingungen können das Leben eines Spielenden entweder leichter oder schwerer machen und spiegeln somit die unterschiedlichen Ausgangslagen im echten Leben wider.</p>
         <p>Zusätzlich haben die Spielenden die Möglichkeit, Gesetze zu entwerfen und zu verabschieden, um zu zeigen, wie durch demokratische Mehrheitsbildung ungleiche Rahmenbedingungen ausgeglichen werden können.</p>
       </Section>
-      <CallToAction />
       <Section>
         <h3>？Idee</h3>
         <p>
