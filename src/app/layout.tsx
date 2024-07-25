@@ -3,6 +3,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const urbanist = Urbanist( { subsets: ["latin"] } );
 
@@ -18,7 +19,27 @@ export default function RootLayout ( {
 }> ) {
   return (
     <html lang="en">
-      <body className={urbanist.className}>{children}</body>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="icon"
+          href="/icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+      </head>
+      <body className={urbanist.className}>{children}
+        <footer className="flex items-center p-5 flex-col">
+          <p>
+            <strong>Made for the Widerstand</strong> by Flo, Orest, Adrian, Irena, Esra & der
+            <Link href="https://www.hcknzs.com/">
+              <strong> HCK NZS </strong>
+            </Link>
+            Crew
+          </p>
+          <Link href="mailto:kontakt@hackopoly.xyz">kontakt@hackopoly.xyz</Link>
+        </footer>
+      </body>
       <Analytics />
       <SpeedInsights />
     </html>

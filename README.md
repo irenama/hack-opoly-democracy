@@ -1,9 +1,14 @@
 # Hack-opoly – Die Demokratie
 
+Hackopoly challenges players to take on new roles and adopt different perspectives. In doing so, they learn how to organise majorities through democratic means and build a fairer society together.
+
 ## The Project
 
 hosted on [www.hackopoly.xyz/](https://www.hackopoly.xyz/)
 
+## License
+
+This project is licensed under the Creative Commons Attribution-ShareAlike 4.0 International Licence. See the LICENSE file for more details.
 
 ## Tech
 

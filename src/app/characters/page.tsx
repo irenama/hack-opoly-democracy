@@ -1,3 +1,4 @@
+import CallToAction from "@/components/CallToAction";
 import CharacterCard from "@/components/CharacterCard";
 import NavLink from "@/components/NavLink";
 import Section from "@/components/Section";
@@ -10,12 +11,13 @@ export default function Characters () {
         { href: "/", text: "Home" },
         // {href:"/chance-cards", text:"Chance Karten"},
       ]} />
-      <div className="w-full">
+      <header className="w-full">
         <div className="my-10">
           <h1>Hackopoly</h1>
           <h2>Demokratie Edition - Die Charaktere</h2>
         </div>
-      </div>
+      </header>
+      <CallToAction />
       <Section>
         <div className="flex gap-5 flex-wrap justify-center">
           {characters.map( ( { id, ...data } ) => (

@@ -1,6 +1,7 @@
 import NavLink from "@/components/NavLink";
 import Section from "@/components/Section";
 import CommunityCard from "@/components/CommunityCard";
+import CallToAction from "@/components/CallToAction";
 
 export default function CommunityCards () {
   return (
@@ -10,12 +11,13 @@ export default function CommunityCards () {
         { href: "/", text: "Home" },
         // {href:"/chance-cards", text:"Chance Karten"},
       ]} />
-      <div className="w-full">
+      <header className="w-full">
         <div className="my-10">
           <h1>Hackopoly</h1>
           <h2>Demokratie Edition - Ereigniskarten</h2>
         </div>
-      </div>
+      </header>
+      <CallToAction />
       <Section>
         <div className="flex gap-5 flex-wrap justify-center">
           {communityCards.map( ( { id, text } ) => (
